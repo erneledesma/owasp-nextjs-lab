@@ -1,0 +1,34 @@
+{
+  "name": "owasp-nextjs-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Laboratorio practico: 5 riesgos del OWASP Top 10:2025 en Next.js, guiado por tests de integracion",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:a01": "vitest run tests/integration/a01",
+    "test:a02": "vitest run tests/integration/a02",
+    "test:a04": "vitest run tests/integration/a04",
+    "test:a05": "vitest run tests/integration/a05",
+    "test:a07": "vitest run tests/integration/a07",
+    "solucion": "node scripts/aplicar-solucion.mjs"
+  },
+  "dependencies": {
+    "next": "^16.4.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  }
+}
